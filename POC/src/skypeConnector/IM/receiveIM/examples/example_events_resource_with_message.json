@@ -1,0 +1,169 @@
+{
+  "_links": {
+    "self": { "href": "/ucwa/oauth/v1/applications/104/events?ack=2" },
+    "next": { "href": "/ucwa/oauth/v1/applications/104/events?ack=3" }
+  },
+  "sender": [
+    {
+      "rel": "communication",
+      "href": "/ucwa/oauth/v1/applications/104/communication",
+      "events": [
+        {
+          "link": {
+            "rel": "messagingInvitation",
+            "href":
+              "/ucwa/oauth/v1/applications/104/communication/messagingInvitations/6408"
+          },
+          "_embedded": {
+            "messagingInvitation": {
+              "direction": "Incoming",
+              "importance": "Normal",
+              "threadId": "Ac7bUftwUcVMzgTzRl+OQchCsUn35Q==",
+              "state": "Connecting",
+              "subject": "",
+              "_links": {
+                "self": {
+                  "href":
+                    "/ucwa/oauth/v1/applications/104/communication/messagingInvitations/6408"
+                },
+                "to": {
+                  "href":
+                    "/ucwa/oauth/v1/applications/104/people/toshm@contoso.com"
+                },
+                "conversation": {
+                  "href":
+                    "/ucwa/oauth/v1/applications/104/communication/conversations/eee0"
+                },
+                "accept": {
+                  "href":
+                    "/ucwa/oauth/v1/applications/104/communication/messagingInvitations/6408/accept"
+                },
+                "decline": {
+                  "href":
+                    "/ucwa/oauth/v1/applications/104/communication/messagingInvitations/6408/decline"
+                },
+                "messaging": {
+                  "href":
+                    "/ucwa/oauth/v1/applications/104/communication/conversations/eee0/messaging"
+                },
+                "message": {
+                  "href": "data:text/plain;charset=utf-8,Hi+Tosh%0d%0a"
+                }
+              },
+              "_embedded": {
+                "from": {
+                  "sourceNetwork": "SameEnterprise",
+                  "anonymous": false,
+                  "name": "Lene Aaling",
+                  "uri": "sip:lenea@contoso.com",
+                  "_links": {
+                    "self": {
+                      "href":
+                        "/ucwa/oauth/v1/applications/104/communication/conversations/eee0/participants/lenea@contoso.com"
+                    },
+                    "conversation": {
+                      "href":
+                        "/ucwa/oauth/v1/applications/104/communication/conversations/eee0"
+                    },
+                    "contact": {
+                      "href":
+                        "/ucwa/oauth/v1/applications/104/people/lenea@contoso.com"
+                    },
+                    "contactPresence": {
+                      "href":
+                        "/ucwa/oauth/v1/applications/104/people/lenea@contoso.com/presence"
+                    }
+                  },
+                  "rel": "participant"
+                }
+              },
+              "rel": "messagingInvitation"
+            }
+          },
+          "type": "started"
+        },
+        {
+          "link": {
+            "rel": "conversation",
+            "href":
+              "/ucwa/oauth/v1/applications/104/communication/conversations/eee0"
+          },
+          "_embedded": {
+            "conversation": {
+              "state": "Incoming",
+              "threadId": "Ac7bUftwUcVMzgTzRl+OQchCsUn35Q==",
+              "subject": "",
+              "activeModalities": ["Messaging"],
+              "importance": "Normal",
+              "recording": false,
+              "_links": {
+                "self": {
+                  "href":
+                    "/ucwa/oauth/v1/applications/104/communication/conversations/eee0"
+                },
+                "applicationSharing": {
+                  "href":
+                    "/ucwa/oauth/v1/applications/104/communication/conversations/eee0/applicationSharing"
+                },
+                "audioVideo": {
+                  "href":
+                    "/ucwa/oauth/v1/applications/104/communication/conversations/eee0/audioVideo"
+                },
+                "dataCollaboration": {
+                  "href":
+                    "/ucwa/oauth/v1/applications/104/communication/conversations/eee0/dataCollaboration"
+                },
+                "messaging": {
+                  "href":
+                    "/ucwa/oauth/v1/applications/104/communication/conversations/eee0/messaging"
+                },
+                "phoneAudio": {
+                  "href":
+                    "/ucwa/oauth/v1/applications/104/communication/conversations/eee0/phoneAudio"
+                }
+              },
+              "rel": "conversation"
+            }
+          },
+          "type": "added"
+        }
+      ]
+    },
+    {
+      "rel": "conversation",
+      "href":
+        "/ucwa/oauth/v1/applications/104/communication/conversations/eee0",
+      "events": [
+        {
+          "link": {
+            "rel": "localParticipant",
+            "href":
+              "/ucwa/oauth/v1/applications/104/communication/conversations/eee0/participants/toshm@contoso.com",
+            "title": "Tosh Meston"
+          },
+          "_embedded": {
+            "localParticipant": {
+              "sourceNetwork": "SameEnterprise",
+              "anonymous": false,
+              "name": "Tosh Meston",
+              "uri": "sip:toshm@contoso.com",
+              "_links": {
+                "self": {
+                  "href":
+                    "/ucwa/oauth/v1/applications/104/communication/conversations/eee0/participants/toshm@contoso.com"
+                },
+                "conversation": {
+                  "href":
+                    "/ucwa/oauth/v1/applications/104/communication/conversations/eee0"
+                },
+                "me": { "href": "/ucwa/oauth/v1/applications/104/me" }
+              },
+              "rel": "participant"
+            }
+          },
+          "type": "added"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "_links": {
+    "self": {
+      "href": "/ucwa/oauth/v1/applications/101017548935/events?ack=9"
+    },
+    "next": {
+      "href": "/ucwa/oauth/v1/applications/101017548935/events?ack=10"
+    }
+  },
+  "sender": [
+    {
+      "rel": "conversation",
+      "href": "/ucwa/oauth/v1/applications/101017548935/communication/conversations/45c7e378-32fe-4709-b5ba-e5f913325f3e",
+      "events": [
+        {
+          "link": {
+            "rel": "message",
+            "href": "/ucwa/oauth/v1/applications/101017548935/communication/conversations/45c7e378-32fe-4709-b5ba-e5f913325f3e/messaging/messages/4"
+          },
+          "status": "Success",
+          "_embedded": {
+            "message": {
+              "direction": "Incoming",
+              "timeStamp": "/Date(1521638897041)/",
+              "_links": {
+                "self": {
+                  "href": "/ucwa/oauth/v1/applications/101017548935/communication/conversations/45c7e378-32fe-4709-b5ba-e5f913325f3e/messaging/messages/4"
+                },
+                "contact": {
+                  "href": "/ucwa/oauth/v1/applications/101017548935/people/foobar@orange.com"
+                },
+                "participant": {
+                  "href": "/ucwa/oauth/v1/applications/101017548935/communication/conversations/45c7e378-32fe-4709-b5ba-e5f913325f3e/participants/foobar@orange.com",
+                  "title": ""
+                },
+                "messaging": {
+                  "href": "/ucwa/oauth/v1/applications/101017548935/communication/conversations/45c7e378-32fe-4709-b5ba-e5f913325f3e/messaging"
+                },
+                "plainMessage": {
+                  "href": "data:text/plain;charset=utf-8,TUAN%0d%0a"
+                }
+              },
+              "rel": "message"
+            }
+          },
+          "type": "completed"
+        },
+        {
+          "link": {
+            "rel": "participant",
+            "href": "/ucwa/oauth/v1/applications/101017548935/communication/conversations/45c7e378-32fe-4709-b5ba-e5f913325f3e/participants/foobar@orange.com",
+            "title": ""
+          },
+          "in": {
+            "rel": "typingParticipants",
+            "href": "/ucwa/oauth/v1/applications/101017548935/communication/conversations/45c7e378-32fe-4709-b5ba-e5f913325f3e/messaging/typingParticipants"
+          },
+          "type": "added"
+        }
+      ]
+    }
+  ]
+}

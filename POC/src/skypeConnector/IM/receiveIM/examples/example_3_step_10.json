@@ -1,0 +1,84 @@
+{
+  "_links": {
+    "self": { "href": "/ucwa/oauth/v1/applications/104/events?ack=4" },
+    "next": { "href": "/ucwa/oauth/v1/applications/104/events?ack=5" }
+  },
+  "sender": [
+    {
+      "rel": "communication",
+      "href": "/ucwa/oauth/v1/applications/104/communication",
+      "events": [
+        {
+          "link": {
+            "rel": "messagingInvitation",
+            "href":
+              "/ucwa/oauth/v1/applications/104/communication/messagingInvitations/6408"
+          },
+          "_embedded": {
+            "messagingInvitation": {
+              "direction": "Incoming",
+              "importance": "Normal",
+              "threadId": "Ac7bUftwUcVMzgTzRl+OQchCsUn35Q==",
+              "state": "Connecting",
+              "subject": "",
+              "_links": {
+                "self": {
+                  "href":
+                    "/ucwa/oauth/v1/applications/104/communication/messagingInvitations/6408"
+                },
+                "to": {
+                  "href":
+                    "/ucwa/oauth/v1/applications/104/people/toshm@contoso.com"
+                },
+                "conversation": {
+                  "href":
+                    "/ucwa/oauth/v1/applications/104/communication/conversations/eee0"
+                },
+                "messaging": {
+                  "href":
+                    "/ucwa/oauth/v1/applications/104/communication/conversations/eee0/messaging"
+                },
+                "message": {
+                  "href": "data:text/plain;charset=utf-8,Hi+Tosh%0d%0a"
+                }
+              },
+              "_embedded": {
+                "from": {
+                  "sourceNetwork": "SameEnterprise",
+                  "anonymous": false,
+                  "name": "Lene Aaling",
+                  "uri": "sip:lenea@contoso.com",
+                  "_links": {
+                    "self": {
+                      "href":
+                        "/ucwa/oauth/v1/applications/104/communication/conversations/eee0/participants/lenea@contoso.com"
+                    },
+                    "conversation": {
+                      "href":
+                        "/ucwa/oauth/v1/applications/104/communication/conversations/eee0"
+                    },
+                    "contact": {
+                      "href":
+                        "/ucwa/oauth/v1/applications/104/people/lenea@contoso.com"
+                    },
+                    "contactPresence": {
+                      "href":
+                        "/ucwa/oauth/v1/applications/104/people/lenea@contoso.com/presence"
+                    },
+                    "contactPhoto": {
+                      "href":
+                        "/ucwa/oauth/v1/applications/104/photos/lenea@contoso.com"
+                    }
+                  },
+                  "rel": "participant"
+                }
+              },
+              "rel": "messagingInvitation"
+            }
+          },
+          "type": "updated"
+        }
+      ]
+    }
+  ]
+}

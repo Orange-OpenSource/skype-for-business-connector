@@ -1,0 +1,106 @@
+/*
+ * skype-for-business-server-connector
+ *
+ * Copyright 2018 Orange
+ * <foobar@orange.com>
+ *
+ * This library is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as published by the
+ * Free Software Foundation; either version 2.1 of the License, or (at your
+ * option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License
+ * for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this library; if not, write to the Free Software Foundation,
+ * Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+ *
+ */
+
+[
+  {
+    "link": {
+      "rel": "participant",
+      "href": "/ucwa/oauth/v1/applications/10165861200/communication/conversations/936eed4d-52da-4987-8c1d-ed02a11f0a55/participants/foobar@orange.com",
+      "title": ""
+    },
+    "type": "added"
+  },
+  {
+    "link": {
+      "rel": "participantMessaging",
+      "href": "/ucwa/oauth/v1/applications/10165861200/communication/conversations/936eed4d-52da-4987-8c1d-ed02a11f0a55/participants/foobar@orange.com/messaging"
+    },
+    "in": {
+      "rel": "participant",
+      "href": "/ucwa/oauth/v1/applications/10165861200/communication/conversations/936eed4d-52da-4987-8c1d-ed02a11f0a55/participants/foobar@orange.com",
+      "title": ""
+    },
+    "type": "added"
+  },
+  {
+    "link": {
+      "rel": "participantMessaging",
+      "href": "/ucwa/oauth/v1/applications/10165861200/communication/conversations/936eed4d-52da-4987-8c1d-ed02a11f0a55/participants/foobar@orange.com/messaging"
+    },
+    "in": {
+      "rel": "localParticipant",
+      "href": "/ucwa/oauth/v1/applications/10165861200/communication/conversations/936eed4d-52da-4987-8c1d-ed02a11f0a55/participants/foobar@orange.com",
+      "title": "DUNG HOANG Tuan IMT/OLS"
+    },
+    "_embedded": {
+      "participantMessaging": {
+        "_links": {
+          "self": {
+            "href": "/ucwa/oauth/v1/applications/10165861200/communication/conversations/936eed4d-52da-4987-8c1d-ed02a11f0a55/participants/foobar@orange.com/messaging"
+          },
+          "participant": {
+            "href": "/ucwa/oauth/v1/applications/10165861200/communication/conversations/936eed4d-52da-4987-8c1d-ed02a11f0a55/participants/foobar@orange.com",
+            "title": "DUNG HOANG Tuan IMT/OLS"
+          }
+        },
+        "rel": "participantMessaging"
+      }
+    },
+    "type": "added"
+  },
+  {
+    "link": {
+      "rel": "messaging",
+      "href": "/ucwa/oauth/v1/applications/10165861200/communication/conversations/936eed4d-52da-4987-8c1d-ed02a11f0a55/messaging"
+    },
+    "_embedded": {
+      "messaging": {
+        "state": "Connected",
+        "negotiatedMessageFormats": [
+          "Plain"
+        ],
+        "_links": {
+          "self": {
+            "href": "/ucwa/oauth/v1/applications/10165861200/communication/conversations/936eed4d-52da-4987-8c1d-ed02a11f0a55/messaging"
+          },
+          "conversation": {
+            "href": "/ucwa/oauth/v1/applications/10165861200/communication/conversations/936eed4d-52da-4987-8c1d-ed02a11f0a55"
+          },
+          "stopMessaging": {
+            "href": "/ucwa/oauth/v1/applications/10165861200/communication/conversations/936eed4d-52da-4987-8c1d-ed02a11f0a55/messaging/terminate"
+          },
+          "sendMessage": {
+            "href": "/ucwa/oauth/v1/applications/10165861200/communication/conversations/936eed4d-52da-4987-8c1d-ed02a11f0a55/messaging/messages"
+          },
+          "setIsTyping": {
+            "href": "/ucwa/oauth/v1/applications/10165861200/communication/conversations/936eed4d-52da-4987-8c1d-ed02a11f0a55/messaging/typing"
+          },
+          "typingParticipants": {
+            "href": "/ucwa/oauth/v1/applications/10165861200/communication/conversations/936eed4d-52da-4987-8c1d-ed02a11f0a55/messaging/typingParticipants"
+          }
+        },
+        "rel": "messaging"
+      }
+    },
+    "type": "updated"
+  }
+]

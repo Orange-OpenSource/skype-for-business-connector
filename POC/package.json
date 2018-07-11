@@ -1,0 +1,45 @@
+{
+  "name": "orange-lync-nodejs",
+  "version": "1.0.0",
+  "description": "Let bots developed by Smartly connect to Orange Skype platform.",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf build/ && babel src/ -d build/",
+    "playground:w": "cross-env NODE_ENV=development nodemon src/misc/playground.js",
+    "postinstall": "npm run build",
+    "start": "cross-env NODE_ENV=production node build/index.js",
+    "dev": "cross-env NODE_ENV=development nodemon src/index.js",
+    "test-skco": "cross-env NODE_ENV=development mocha src/skypeConnector/skypeConnectorPublicAPI.test.js",
+    "test-skco-c:w": "cross-env NODE_ENV=development nodemon --exec \"mocha src/skypeConnector/common/common.test.js\"",
+    "test-skco-ca:w": "cross-env NODE_ENV=development nodemon --exec \"mocha src/skypeConnector/createApp/createApp.test.js\"",
+    "test-skco-im-common:w": "cross-env NODE_ENV=development nodemon --exec \"mocha src/skypeConnector/IM/common/common.test.js\"",
+    "test-skco-im-conversation:w": "cross-env NODE_ENV=development nodemon --exec \"mocha src/skypeConnector/IM/conversation/conversation.test.js\"",
+    "test-skco-im-sendim:w": "cross-env NODE_ENV=development nodemon --exec \"mocha src/skypeConnector/IM/sendIM/sendIM.test.js\"",
+    "test-skco-im-receiveim:w": "cross-env NODE_ENV=development nodemon --exec \"mocha src/skypeConnector/IM/receiveIM/receiveIM.test.js\"",
+    "test-bot": "cross-env NODE_ENV=development mocha src/bot/bot.test.js"
+  },
+  "keywords": [
+    "lync",
+    "skype for business server",
+    "bot",
+    "smartly"
+  ],
+  "author": "tuan.dunghoang@orange.com",
+  "license": "See LICENSE.md file",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-runtime": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "cross-env": "^5.1.4",
+    "express": "^4.16.2",
+    "request": "^2.83.0",
+    "rimraf": "^2.6.2",
+    "webcom": "^1.3.2"
+  },
+  "devDependencies": {
+    "mocha": "^5.0.1",
+    "nodemon": "^1.15.1"
+  }
+}
